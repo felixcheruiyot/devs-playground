@@ -1,12 +1,9 @@
-const hljs = require('highlight.js/lib/common');
-//const hljs_css = require('highlight.js/styles/github.css');
-
 class DevsPlayground{
 	constructor() {
 	
 	}
 
-	build(htmlString, language) {
+	build(elem) {
 	    return hljs.highlight(htmlString, {language: language}).value
 	}
 }
