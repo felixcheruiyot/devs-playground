@@ -1,25 +1,37 @@
+html,
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    margin: 0;
+}
+
 .left-tabbed {
-    border-radius: 3px;
+    /* border-radius: 3px; */
     background: rgb(9, 11, 30);
     display: flex;
     flex-direction: row;
-    min-height: 50vh;
+    min-height: 100vh;
     overflow-y: auto;
 }
 
 .left-tabbed .tab-sidebar {
-    max-width: 140px;
-    padding: 8px;
+    width: 180px;
+    padding: 8px 0px;
 }
 
 .left-tabbed .tab-sidebar ul {
     list-style: none !important;
     margin: 0 !important;
     padding: 0 !important;
+    margin-block-start: 0px !important;
+    margin-block-end: 0px !important;
+    margin-inline-start: 0px !important;
+    margin-inline-end: 0px !important;
+    padding-inline-start: 0px !important;
 }
 
 .left-tabbed .tab-sidebar ul>li {
-    padding: 4px 10px;
+    display: block;
 }
 
 .left-tabbed .tab-sidebar a {
@@ -28,12 +40,24 @@
     display: flex;
     flex-direction: row;
     column-gap: 0.875rem;
+    font-weight: 600;
+    padding: 8px 16px;
+}
+
+.left-tabbed .tab-sidebar icon {
+    width: 34px;
+}
+
+.left-tabbed .tab-sidebar a:hover,
+.left-tabbed .tab-sidebar .active {
+    background: linear-gradient(90deg, rgb(84, 104, 255) 0%, rgb(23, 26, 48) 92.71%);
+    transition: transform 0.2s ease-in-out 0s;
 }
 
 .left-tabbed .tab-content {
     flex: 1;
     background: #282a36;
-    padding: 8px;
+    padding: 8px 16px;
     overflow-x: auto;
 }
 
@@ -48,6 +72,7 @@
 .left-tabbed .tab-content .tab-show {
     display: block;
 }
+
 .left-tabbed pre {
     margin: 0 !important;
     padding: 0 !important;

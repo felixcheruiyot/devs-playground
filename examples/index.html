@@ -2,6 +2,9 @@
 
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="../src/css/default.css">
 	<link rel="stylesheet" href="../src/css/dracual.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/highlight.min.js"></script>
@@ -13,7 +16,7 @@
 		<div class="tab-sidebar">
 			<ul>
 				<li>
-					<a href="#" class="tab-link" data-target="python">
+					<a href="#" class="tab-link active" data-target="python">
 						<icon>
 							<img src="../src/images/icons/python.svg" alt="Python icon">
 						</icon>
@@ -28,14 +31,45 @@
 						<span>Javascript</span>
 					</a>
 				</li>
+				<li>
+					<a href="#" class="tab-link" data-target="go">
+						<icon>
+							<img src="../src/images/icons/go.svg" alt="go icon">
+						</icon>
+						<span>Go</span>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="tab-link" data-target="php">
+						<icon>
+							<img src="../src/images/icons/php.svg" alt="php icon">
+						</icon>
+						<span>PHP</span>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="tab-link" data-target="java">
+						<icon>
+							<img src="../src/images/icons/java.svg" alt="java icon">
+						</icon>
+						<span>Java</span>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="tab-link" data-target="vue">
+						<icon>
+							<img src="../src/images/icons/vue.svg" alt="vue icon">
+						</icon>
+						<span>Vue</span>
+					</a>
+				</li>
 
 			</ul>
 		</div>
 		<div class="tab-content">
 			<div id="python-tab" class="tab tab-show">
 				<pre>
-			<code class="language-python">
-def greetings(name): 
+			<code class="language-python">def greetings(name): 
     print(f"Hello {name}")
 			</code>
 			</pre>

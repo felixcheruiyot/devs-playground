@@ -15,7 +15,12 @@ let DevsPlaygroundTabs = {
                             tab.classList.add("tab-hide")
                             console.log("tab", tab)
                         }
+                        for (let y = 0; y < tabLinks.length; ++y) {
+                            let tabLinkY = tabLinks[y]
+                            tabLinkY.classList.remove("active")
+                        }
                         tab.classList.add("tab-show")
+                        tabLink.classList.add("active")
                     }
                 }
             }
