@@ -1,0 +1,15 @@
+{
+  "name": "devs-playground",
+  "version": "1.0.0",
+  "description": "Create a playground and showcase code on your website for quick devs onboarding",
+  "main": "scr/index.js",
+  "author": "Felix Cheruiyot",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "browserify src/index.js | uglifyjs > build/intasend-inline.js"
+  },
+  "dependencies": {
+    "highlight.js": "^11.1.0"
+  }
+}
